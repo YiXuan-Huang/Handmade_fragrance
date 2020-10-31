@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Handmade_fragrance", "Handmade_fragrance\Handmade_fragrance.csproj", "{66AD5D67-D248-48E1-A435-2417C51A6BEA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{66AD5D67-D248-48E1-A435-2417C51A6BEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66AD5D67-D248-48E1-A435-2417C51A6BEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66AD5D67-D248-48E1-A435-2417C51A6BEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66AD5D67-D248-48E1-A435-2417C51A6BEA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1FF955B8-B66A-4F3B-9FFE-C2E1F28F4B7B}
+	EndGlobalSection
+EndGlobal
