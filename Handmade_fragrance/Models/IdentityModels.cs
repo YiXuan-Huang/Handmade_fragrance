@@ -21,7 +21,7 @@ namespace Handmade_fragrance.Models
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext()
-            : base("DefaultConnection", throwIfV1Schema: false)
+            : base("Handmade_fragrance", throwIfV1Schema: false)
         {
         }
 

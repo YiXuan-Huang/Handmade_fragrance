@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - 我的 ASP.NET 應用程式</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Unistore", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active">@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Catalog", "About", "Home")</li>
+                    <li>@Html.ActionLink("Blog", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Gallery", "Contact", "Home")</li>
+                    <li class="dropdown">
+                        <a href="../catalog/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../catalog/product.html">Product</a></li>
+                            <li><a href="../cart/">Cart</a></li>
+                            <li><a href="../checkout/">Checkout</a></li>
+                            <li><a href="../faq/">FAQ</a></li>
+                            <li><a href="../contacts/">Contacts</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">Variations</li>
+                            <li><a href="../home">Home</a></li>
+                            <li><a href="../blog/item-photo.html">Article Photo</a></li>
+                            <li><a href="../blog/item-video.html">Article Video</a></li>
+                            <li><a href="../blog/item-review.html">Article Review</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year-T-HANA</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
